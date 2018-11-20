@@ -25,6 +25,6 @@ class MonthFragment : Fragment() {
         val recyclerView = view.recycler_view
 
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = MonthAdapter()
+        recyclerView.adapter = RecyclerViewItemAdapter(monthList)
     }
 }

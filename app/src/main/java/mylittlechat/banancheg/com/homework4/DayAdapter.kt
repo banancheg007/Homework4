@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import mylittlechat.banancheg.com.homework4.R
-import mylittlechat.banancheg.com.homework4.days
+import mylittlechat.banancheg.com.homework4.daysList
 
 class DayAdapter : RecyclerView.Adapter<DayAdapter.DayViewHolder>() {
 
-    private val dayList: List<String> = days
+    private val dayList: List<String> = daysList
     override fun getItemCount(): Int {
         return dayList.size
     }
@@ -18,7 +18,7 @@ class DayAdapter : RecyclerView.Adapter<DayAdapter.DayViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): DayAdapter.DayViewHolder {
         return DayViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.day_item,
+                R.layout.day_or_month_item,
                 parent,
                 false
             )

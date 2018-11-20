@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import mylittlechat.banancheg.com.homework4.R
-import mylittlechat.banancheg.com.homework4.month
 
 class MonthAdapter : RecyclerView.Adapter<MonthAdapter.MonthViewHolder>() {
 
-    private val monthList: List<String> = month
+    private val monthList: List<String> = mylittlechat.banancheg.com.homework4.monthList
     override fun getItemCount(): Int {
         return monthList.size
     }
@@ -18,7 +17,7 @@ class MonthAdapter : RecyclerView.Adapter<MonthAdapter.MonthViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MonthAdapter.MonthViewHolder {
         return MonthViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.month_item,
+                R.layout.day_or_month_item,
                 parent,
                 false
             )

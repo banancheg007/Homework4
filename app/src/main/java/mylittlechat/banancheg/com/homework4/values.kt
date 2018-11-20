@@ -1,32 +1,38 @@
 package mylittlechat.banancheg.com.homework4
 
-val days = listOf("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
+val daysList = mutableListOf(Item("Sunday"),
+    Item("Monday"),
+    Item("Tuesday"),
+    Item("Wednesday"),
+    Item("Thursday"),
+    Item("Friday"),
+    Item("Saturday"))
 
-val month = listOf("January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December")
+val monthList = mutableListOf(Item("January"),
+    Item("February"),
+    Item("March"),
+    Item("April"),
+    Item("May"),
+    Item("June"),
+    Item("July"),
+    Item("August"),
+    Item("September"),
+    Item("October"),
+    Item("November"),
+    Item("December"))
 
-val zodiacSigns = listOf(
-    ZodiacItem(R.drawable.aries,"Aries"),
-    ZodiacItem(R.drawable.aquarius,"Aquarius"),
-    ZodiacItem(R.drawable.cancer,"Cancer"),
-    ZodiacItem(R.drawable.capricorn,"Capricorn"),
-    ZodiacItem(R.drawable.gemini,"Gemini"),
-    ZodiacItem(R.drawable.leo,"Leo"),
-    ZodiacItem(R.drawable.libra,"Libra"),
-    ZodiacItem(R.drawable.pisces,"Pisces"),
-    ZodiacItem(R.drawable.sagittarius,"Sagittarius"),
-    ZodiacItem(R.drawable.scorpio,"Scorpio"),
-    ZodiacItem(R.drawable.taurus,"Taurus"),
-    ZodiacItem(R.drawable.virgo,"Virgo")
+val zodiacSignsList = mutableListOf(
+    SignZodiacItem(R.drawable.aries,"Aries"),
+    SignZodiacItem(R.drawable.scorpio,"Scorpio"),
+    SignZodiacItem(R.drawable.taurus,"Taurus"),
+    SignZodiacItem(R.drawable.capricorn,"Capricorn"),
+    SignZodiacItem(R.drawable.libra,"Libra"),
+    SignZodiacItem(R.drawable.pisces,"Pisces"),
+    SignZodiacItem(R.drawable.aquarius,"Aquarius"),
+    SignZodiacItem(R.drawable.cancer,"Cancer"),
+    SignZodiacItem(R.drawable.sagittarius,"Sagittarius"),
+    SignZodiacItem(R.drawable.gemini,"Gemini"),
+    SignZodiacItem(R.drawable.leo,"Leo"),
+    SignZodiacItem(R.drawable.virgo,"Virgo")
 
 )

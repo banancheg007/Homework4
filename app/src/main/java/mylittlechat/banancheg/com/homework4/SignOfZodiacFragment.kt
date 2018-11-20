@@ -24,6 +24,6 @@ class SignOfZodiacFragment : Fragment() {
         val recyclerView = view.recycler_view
 
         recyclerView.layoutManager = GridLayoutManager(context,3)
-        recyclerView.adapter = SignOfZodiacAdapter()
+        recyclerView.adapter = RecyclerViewItemAdapter(zodiacSignsList)
     }
 }

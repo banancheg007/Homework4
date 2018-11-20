@@ -24,6 +24,6 @@ class DayFragment : Fragment() {
         val recyclerView = view.recycler_view
 
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = DayAdapter()
+        recyclerView.adapter = RecyclerViewItemAdapter(daysList)
     }
 }

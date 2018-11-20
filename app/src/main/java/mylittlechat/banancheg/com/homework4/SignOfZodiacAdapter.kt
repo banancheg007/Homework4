@@ -9,7 +9,7 @@ import android.widget.TextView
 
 class SignOfZodiacAdapter : RecyclerView.Adapter<SignOfZodiacAdapter.SignOfZodiacViewHolder>() {
 
-    private val signsOfZodiacList: List<ZodiacItem> = zodiacSigns
+    private val signsOfZodiacList: List<SignZodiacItem> = zodiacSignsList
     override fun getItemCount(): Int {
         return signsOfZodiacList.size
     }
@@ -33,9 +33,9 @@ class SignOfZodiacAdapter : RecyclerView.Adapter<SignOfZodiacAdapter.SignOfZodia
         private val itemText: TextView = view.findViewById(R.id.item_text)
         private val itemImage: ImageView = view.findViewById(R.id.item_image)
 
-        fun onBind(zodiacItem: ZodiacItem) {
-            itemText.text = zodiacItem.text
-            itemImage.setImageResource(zodiacItem.imageId)
+        fun onBind(signZodiacItem: SignZodiacItem) {
+            itemText.text = signZodiacItem.text
+            itemImage.setImageResource(signZodiacItem.imageId)
         }
     }
 }
