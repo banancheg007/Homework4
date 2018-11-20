@@ -10,18 +10,19 @@ import kotlinx.android.synthetic.main.fragment_main.view.*
 
 class SignOfZodiacFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View = inflater.inflate(R.layout.fragment_main, container, false)
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_main, container, false)
 
         val recyclerView = view.recycler_view
 
-        recyclerView.layoutManager = GridLayoutManager(context,3)
-        recyclerView.adapter = RecyclerViewItemAdapter(zodiacSignsList)
+        val numberOfColumns = 3
+        val layoutManager = GridLayoutManager(context, numberOfColumns)
+        val adapter = RecyclerViewItemAdapter(zodiacSignsList)
+
+        recyclerView.layoutManager = layoutManager
+        recyclerView.adapter = adapter
+        recyclerView.addItemDecoration(MySignOfZodiacItemDecorator(context!!))
+
+        return view
     }
 }

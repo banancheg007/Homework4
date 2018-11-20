@@ -24,5 +24,6 @@ class MonthFragment : Fragment() {
 
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = RecyclerViewItemAdapter(monthList)
+
     }
 }
