@@ -6,7 +6,11 @@ import android.support.v4.app.FragmentPagerAdapter
 
 class MyFragmentPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
     override fun getItem(position: Int): Fragment {
-        return PageFragment().newInstance(position)
+        return when(position){
+            0->DayFragment()
+            1->MonthFragment()
+            else->SignOfZodiacFragment()
+        }
     }
 
     override fun getPageTitle(position: Int): CharSequence? {

@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val myViewPager = pager
-        val myTabs = tabs
+        val myTabs = tab
 
         myViewPager.adapter = MyFragmentPagerAdapter(supportFragmentManager)
         myTabs.setupWithViewPager(myViewPager)
